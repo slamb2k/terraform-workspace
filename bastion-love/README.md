@@ -8,25 +8,35 @@ This template can be executed via a local or portal hosted Azure Cloud Shell whi
 
 1. If the Azure CLI isn't installed, grab it via a single command:
 
-   `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+    ```
+   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+    ```
 
 2. Check the latest version number from the [Terraform website](https://www.terraform.io/downloads.html).
 
 3. Download the latest version (Currently 0.12.29) to the local directory.
 
-     `wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip`
+    ```
+    wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_linux_amd64.zip
+    ```
 
 4. Unzip the package
 
-    `unzip terraform_0.12.29_linux_amd64.zip`
+    ```
+    unzip terraform_0.12.29_linux_amd64.zip
+    ```
 
 5. Move the output to the location used for public executabls
 
-    `sudo rm /usr/local/bin/terraform -R`
+    ```
+    sudo rm /usr/local/bin/terraform -R
+    ```
 
 6. Check the version
 
-    `terraform --version`
+    ```
+    terraform --version
+    ```
 
 As long as you have an active Azure subscription you are ready to execute this template and create all of the example resources.
 
@@ -36,15 +46,21 @@ As long as you have an active Azure subscription you are ready to execute this t
 
 3. Initialise terraform using the following command:
 
-    `terraform init`
+    ```
+    terraform init
+    ```
 
 4. Run the plan command to see what operations will be performed when the template is applied.
 
-    `terraform plan`
+    ```
+    terraform plan
+    ```
 
 5. Execute the template by applying it:
 
-    `terraform apply`
+    ```
+    terraform apply
+    ```
 
 This template was taken from a Medium article called [Azure & Terraform — Episode 1: Building a Basic Bastion/Worker Host Virtual Network](https://medium.com/@shouldroforion/azure-terraform-part-1-building-a-basic-bastion-worker-host-virtual-network-c8bcc419cfc9). There were some deprecated settings that have been corrected so the template now works.
 
