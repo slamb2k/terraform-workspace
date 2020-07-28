@@ -2,7 +2,7 @@ This Terraform template creates a simple enterprise configuration of a Linux Bas
 
 ![alt text](https://github.com/slamb2k/multiOneRosterAPIToSDS/blob/master/docs/nsw_high_level.png?raw=true "NSW DOE School Data Sync Process")
 
-![alt text](bastion-love/network.png "Simple Bastion Config")
+![alt text](https://github.com/slamb2k/terraform-workspace/bastion-love/network.png "Simple Bastion Config")
 
 For examples of using Terraform to perform basic activites like VM creation, please refer to the [terraform-azurerm-compute GitHub repo](https://github.com/Azure/terraform-azurerm-compute "terraform-azurerm-compute GitHub repo").
 
